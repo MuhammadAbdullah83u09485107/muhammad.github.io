@@ -13,6 +13,6 @@ function draw() {
 function draw_base() {
   rect(mouseX - rectSize/2, 350, rectSize, 15);
   if (mouseX - rectSize/2 < width || mouseX - rectSize/2 > width) {
-    mouseX = width;
+    
   }
 }
