@@ -30,9 +30,7 @@ function setupGame() {
   for (x = 1; x <= height; x++ ) {
     circle(mouseX, 340 - x, circleSize);
   }
-  for (y = 1; y <= width; y++ ) {
-    circle(mouseX - y, 340, circleSize);
-  }
+  
   
   
   //create rectangles

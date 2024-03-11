@@ -120,8 +120,8 @@ function displayScore() {
 function restartGame() {
   //returns the game to setup once the restart button is clicked
   gameOverFlag = false;
-  x = 0
-  y = 0
+  speedX = 0;
+  speedY = 0;
   // Remove restart button
   restartButton.remove();
   restartButton = null;
