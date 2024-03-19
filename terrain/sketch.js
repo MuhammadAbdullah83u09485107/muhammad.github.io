@@ -23,7 +23,7 @@ function draw() {
   }
 }
 
-generateTerrain() {
+function generateTerrain() {
   let time = 0;
   let deltaTime = 0.003;
   for (let x = 0; x < width; x += rectWidth) {
