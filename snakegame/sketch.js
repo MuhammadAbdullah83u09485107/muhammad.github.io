@@ -1,3 +1,6 @@
+// found help from: https://www.youtube.com/watch?v=baBq5GAL0_U
+// found help from: https://www.youtube.com/watch?v=QTcIXok9wNY
+
 let x;
 let y;
 let speedX = 0;
