@@ -27,7 +27,7 @@ function draw() {
 
 function spawnBubble() {
   let someBubble = {
-    size: random(10, 30),
+    size: random(30, 50),
     x: random(width),
     y: random(height),
     speed: 3,
@@ -37,7 +37,7 @@ function spawnBubble() {
     alpha: random(225),
     timeX: random(1000000),
     timeY: random(1000000),
-    deltaTime: 0.1,
+    deltaTime: 0.005,
   }
   theBubbles.push(someBubble);
 }
@@ -85,5 +85,26 @@ function moveBubblesWithNoise() {
 
     bubble.timeX += bubble.deltaTime;
     bubble.timeY += bubble.deltaTime;
+  }
+}
+
+function clickedInBubble(x, y, someBubble) {
+  let distanceAway = dist(x, y, someBubble.x, someBubble.y);
+  let radius = someBubble.size/2;
+  if (distanceAway < radius) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+function mousePressed() {
+  //did you click on the bubble
+  for (let i = theBubbles.length - 1; i >= 0; i--) {
+    if (clickedInBubble(mouseX, mouseY, theBubbles[i])) {
+      //murder it
+      theBubbles.splice(i, 1);
+    }
   }
 }
