@@ -13,12 +13,12 @@ function setup() {
 }
 
 function draw() {
-  background("black");
+  background("white");
   displayBullets();
 }
 
 function displayBullets() {
-  for (let variable of bulletArray) {
+  for (let bullet of bulletArray) {
     fill(bullet.r, bullet.g, bullet.b);
     circle(bullet.x, bullet.y, bullet.size);
   }
@@ -26,15 +26,21 @@ function displayBullets() {
 
 function spawnBullets() {
   let bullet = {
-    x: width / 4,
-    y: height / 4,
+    x: windowWidth/2,
+    y: windowHeight/2,
     speed: 5,
     deltaTime: 0.01,
-    size: 5,
+    size: 10,
     r: 255,
     g: 0,
     b: 0,
 
-  
+
+
   }
+  bulletArray.push(bullet);
+}
+
+function moveBullets() {
+  if (keyIsDown())
 }
