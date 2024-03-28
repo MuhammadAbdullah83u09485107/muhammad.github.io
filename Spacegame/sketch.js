@@ -15,12 +15,16 @@ function setup() {
 function draw() {
   background("white");
   displayBullets();
+  moveBullets();
 }
 
 function displayBullets() {
   for (let bullet of bulletArray) {
     fill(bullet.r, bullet.g, bullet.b);
     circle(bullet.x, bullet.y, bullet.size);
+    if (keyIsPressed(UP_ARROW)) {
+      bullet.y -= bullet.speed;
+    }
   }
 }
 
@@ -41,6 +45,4 @@ function spawnBullets() {
   bulletArray.push(bullet);
 }
 
-function moveBullets() {
-  if (keyIsDown())
-}
+
