@@ -22,27 +22,29 @@ function displayBullets() {
   for (let bullet of bulletArray) {
     fill(bullet.r, bullet.g, bullet.b);
     circle(bullet.x, bullet.y, bullet.size);
-    if (keyIsPressed(UP_ARROW)) {
-      bullet.y -= bullet.speed;
-    }
   }
 }
 
 function spawnBullets() {
   let bullet = {
     x: windowWidth/2,
-    y: windowHeight/2,
-    speed: 5,
+    y: windowHeight,
+    speed: 20,
     deltaTime: 0.01,
     size: 10,
     r: 255,
     g: 0,
     b: 0,
-
-
-
   }
   bulletArray.push(bullet);
 }
 
-
+function moveBullets(bullet) {
+  for (let bullet of bulletArray) {
+    if (keyIsPressed) {
+      if (keyCode === UP_ARROW){
+        bullet.y -= bullet.speed;
+    }
+  }
+}
+}
