@@ -43,7 +43,9 @@ function moveBullets(bullet) {
   for (let bullet of bulletArray) {
     if (keyIsPressed) {
       if (keyCode === UP_ARROW){
-        bullet.y -= bullet.speed;
+        while (bullet.y >= 0) {
+          bullet.y = bullet.y + bullet.speed; 
+        }      
     }
   }
 }
