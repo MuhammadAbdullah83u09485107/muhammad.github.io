@@ -4,6 +4,7 @@
 - [Generative Art](art)
 - [Perlin Noise Terrain Generation](terrain)
 - [Bubble Movement](bubble)
+- [2D Grid](grid)
 
 # Projects
 - [Interactive Scene](snakegame)
