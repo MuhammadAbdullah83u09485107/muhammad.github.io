@@ -63,7 +63,7 @@ function collisionDetection(){
 }
 
 function displayScore() {
-  //shows scorein top left
+  //shows score in top left
   fill(255);
   textSize(20);
   textAlign(LEFT, TOP);
