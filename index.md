@@ -9,3 +9,4 @@
 # Projects
 - [Interactive Scene](snakegame)
 - [Space Invaders](Spacegame)
+- [Tic Tac Toe](gridgame)
