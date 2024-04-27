@@ -31,7 +31,7 @@ function draw() {
 }
 
 function startGame() {
-  cells.forEach(cell=> cell.addEventListener("click", ))
+  cells.forEach(cell=> cell.addEventListener("click", squareClicked))
   restartButton.addEventListener("click", restartGame);
   statusText.textContent = `${currentPlayer}s turn`;
 }
