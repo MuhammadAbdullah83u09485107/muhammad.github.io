@@ -7,6 +7,7 @@
 - [2D Grid](grid)
 - [Walker OOP](walker)
 - [Connected Nodes Demo](nodes)
+- [Recursive Circles](recursivecircles)
 
 # Projects
 - [Interactive Scene](snakegame)
