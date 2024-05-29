@@ -8,6 +8,7 @@
 - [Walker OOP](walker)
 - [Connected Nodes Demo](nodes)
 - [Recursive Circles](recursivecircles)
+[sleirpenski triangle](triangle)
 
 # Projects
 - [Interactive Scene](snakegame)
